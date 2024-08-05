@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>账号管理</title>
+</head>
+<body>
+    <h2>账号管理</h2>
+    <ul id="user-list"></ul>
+    <script>
+        fetch('/users')
+            .then(response => response.json())
+            .then(users => {
+                const userList = document.getElementById('user-list');
+                users.forEach(user => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = user.username;
+                    const deleteButton = document.createElement('button');
+                    deleteButton.textContent = '删除';
+                    deleteButton.onclick = () => {
+                        fetch(`/delete_user?username=${user.username}`, { method: 'DELETE' })
+                            .then(() => location.reload());
+                    };
+                    listItem.appendChild(deleteButton);
+                    userList.appendChild(listItem);
+                });
+            });
+    </script>
+</body>
+</html>
+

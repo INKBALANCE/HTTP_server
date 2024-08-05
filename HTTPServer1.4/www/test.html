@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP Basic Auth Test</title>
+</head>
+<body>
+    <h1>HTTP Basic Authentication Test</h1>
+    <form id="authForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="testAuth()">Test Authentication</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function testAuth() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const credentials = btoa(username + ':' + password);
+
+            fetch('/secured', {
+                headers: {
+                    'Authorization': 'Basic ' + credentials
+                }
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    document.getElementById('result').innerText = 'Access Granted';
+                } else if (response.status === 401) {
+                    document.getElementById('result').innerText = 'Access Denied';
+                } else {
+                    document.getElementById('result').innerText = 'Unexpected Status: ' + response.status;
+                }
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error;
+            });
+        }
+    </script>
+</body>
+</html>
+

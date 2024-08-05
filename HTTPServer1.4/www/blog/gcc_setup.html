@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gcc编译环境配置教程</title>
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <button onclick="location.href='../index.html'">主页</button>
+    <h1>gcc编译环境配置教程</h1>
+    <section>
+        <h2>什么是GCC？</h2>
+        <p>GCC 是 GNU Compiler Collection 的缩写，是一个编译器系统，支持多种编程语言。</p>
+    </section>
+    <section>
+        <h2>安装GCC</h2>
+        <p>在不同的操作系统上安装GCC的方法略有不同。</p>
+        <h3>在Linux上安装GCC</h3>
+        <pre><code>
+sudo apt update
+sudo apt install gcc
+        </code></pre>
+        <h3>在macOS上安装GCC</h3>
+        <pre><code>
+brew install gcc
+        </code></pre>
+        <h3>在Windows上安装GCC</h3>
+        <p>可以使用MinGW或Cygwin来安装GCC。</p>
+    </section>
+    <section>
+        <h2>配置GCC环境变量</h2>
+        <p>安装完成后，需要将GCC添加到环境变量中，以便在命令行中使用。</p>
+        <pre><code>
+export PATH=$PATH:/path/to/gcc
+        </code></pre>
+        <p>更多信息请参考 <a href="https://gcc.gnu.org/install/">GCC官方安装指南</a></p>
+        <p>点击这里查看详细信息 <a href="../blog/gcc.pdf">PDF教程</a></p>
+        <iframe src="../blog/gcc.pdf" width="600" height="500"></iframe>
+    </section>
+</body>
+</html>

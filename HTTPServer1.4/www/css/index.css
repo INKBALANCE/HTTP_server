@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* 白色字体 */
+    text-shadow: 2px 2px 4px #000000; /* 黑色阴影 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #ffcc00; /* 醒目的颜色 */
+    margin-top: 20px;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #155ab6;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 10px 0;
+    width: 90%; /* 更长的宽度 */
+    max-width: 600px; /* 最大宽度 */
+    height: 150px; /* 固定的高度 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.blog-card h2 {
+    color: #ffcc00;
+}
+
+.blog-card p {
+    color: #ffffff;
+}
+

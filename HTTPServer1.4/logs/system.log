@@ -1,0 +1,25 @@
+[2024-07-23 14:44:06] INFO: Starting HTTP server
+[2024-07-23 14:44:06] INFO: HTTP server started
+[2024-07-23 14:47:23] INFO: Sent error response 404 Not Found
+[2024-07-23 14:47:52] ERROR: Error writing response body
+[2024-07-23 14:48:01] ERROR: Error writing response body
+[2024-07-23 14:48:38] INFO: Sent error response 404 Not Found
+[2024-07-23 14:51:37] INFO: Starting HTTP server
+[2024-07-23 14:51:37] INFO: HTTP server started
+[2024-07-23 14:51:55] ERROR: Error writing response body
+[2024-07-23 14:52:08] ERROR: Error writing response body
+[2024-07-23 14:52:17] ERROR: Error writing response body
+[2024-07-23 20:17:05] INFO: Starting HTTP server
+[2024-07-23 20:17:05] INFO: HTTP server started
+[2024-07-23 20:31:23] ERROR: Error writing response body
+[2024-07-23 20:57:10] ERROR: Error writing response body
+[2024-07-23 21:21:54] INFO: Sent error response 404 Not Found
+[2024-07-23 21:45:06] INFO: Starting HTTP server
+[2024-07-23 21:45:06] ERROR: Could not bind socket
+[2024-07-23 21:45:06] ERROR: Could not create and bind socket
+[2024-07-23 21:45:06] INFO: HTTP server stopped
+[2024-07-23 21:50:40] INFO: Starting HTTP server
+[2024-07-23 21:50:40] INFO: HTTP server started
+[2024-07-24 13:49:24] INFO: Starting HTTP server
+[2024-07-24 13:49:24] INFO: HTTP server started
+[2024-07-24 13:49:43] INFO: Sent error response 404 Not Found
